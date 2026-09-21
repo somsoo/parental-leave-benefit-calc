@@ -1,40 +1,104 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 부부 동시·순차 육아휴직 급여 & 건보료 감면 시뮬레이터</title>
-  <meta name="description" content="2026년 개편된 육아휴직 급여 계단식 상한액(250만-200만-160만 원), 사후지급금 폐지 100% 즉시 지급, 6+6 부모특례 최대 450만 원 및 건보료 60% 감면 정산액 일괄 계산">
-  <meta name="keywords" content="2026 육아휴직 급여 상한액, 육아휴직 6+6 부모육아휴직제 계산기, 육아휴직 사후지급금 폐지 실수령액, 육아휴직 건강보험료 유예 감면, 육아휴직 통상임금 계산기">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2026 육아휴직 급여 계산기 &amp; 건보료 감면 모의계산</title>
+<meta content="2026년 고용보험법 개정안 반영: 월 최대 250만 원 계단식 상한액, 6+6 부모육아휴직제 특례, 사후지급금 폐지, 건강보험료 60% 감면 및 유예액을 즉시 계산합니다." name="description"/>
+<link href="https://parental-leave-benefit-calc.enjoy-onepage.com/" rel="canonical"/>
+<!-- OpenGraph -->
+<meta content="website" property="og:type"/>
+<meta content="2026 육아휴직 급여 계산기 &amp; 건보료 감면 모의계산" property="og:title"/>
+<meta content="2026년 고용보험법 개정안 반영: 월 최대 250만 원 계단식 상한액, 6+6 부모육아휴직제 특례, 사후지급금 폐지, 건강보험료 60% 감면 및 유예액을 즉시 계산합니다." property="og:description"/>
+<meta content="https://parental-leave-benefit-calc.enjoy-onepage.com/" property="og:url"/>
+<meta content="https://parental-leave-benefit-calc.enjoy-onepage.com/og-image.png" property="og:image"/>
+<meta content="ko_KR" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="2026 육아휴직 급여 계산기 &amp; 건보료 감면 모의계산" name="twitter:title"/>
+<meta content="2026년 고용보험법 개정안 반영: 월 최대 250만 원 계단식 상한액, 6+6 부모육아휴직제 특례, 사후지급금 폐지, 건강보험료 60% 감면 및 유예액을 즉시 계산합니다." name="twitter:description"/>
+<meta content="https://parental-leave-benefit-calc.enjoy-onepage.com/og-image.png" name="twitter:image"/>
+<!-- Favicon & Icons -->
+<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="./favicon.ico" rel="apple-touch-icon"/>
+<!-- Tailwind & AdSense -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
+<!-- Layout Shield & CLS Defense -->
+<style>
     html, body { max-width: 100%; overflow-x: hidden; }
-    .manual-ad-box { width: 100%; max-width: 960px; overflow: hidden; }
+    .manual-ad-box { width: 100%; max-width: 960px; overflow: hidden; margin: 16px auto; }
     .manual-ad-box ins { max-width: 100% !important; overflow: hidden !important; }
   </style>
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "2026 육아휴직 급여 계산기 & 건보료 감면 모의계산",
+  "url": "https://parental-leave-benefit-calc.enjoy-onepage.com/",
+  "description": "2026년 고용보험법 개정안 반영: 월 최대 250만 원 계단식 상한액, 6+6 부모육아휴직제 특례, 사후지급금 폐지, 건강보험료 60% 감면 및 유예액을 즉시 계산합니다.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "KRW"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "2026년 육아휴직 급여 상한액이 어떻게 바뀌었나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2026년 1월부터 고용보험법 시행령 제95조 개정으로 1~3개월은 통상임금 100% 범위 내 월 최대 250만 원, 4~6개월은 월 최대 200만 원, 7~12개월은 월 최대 160만 원으로 상향되었습니다. 1년 최대 수령액은 2,310만 원입니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "사후지급금(25%)은 언제 받을 수 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2026년부터 사후지급금 제도가 전격 폐지되었습니다. 복직 후 6개월을 기다릴 필요 없이 매월 승인된 급여 100%가 당월에 본인 계좌로 전액 즉시 지급됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "육아휴직 중 건강보험료는 얼마나 감면되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "국민건강보험법 제75조에 따라 휴직 기간 동안 60% 법정 감면이 적용되며, 최저 하한액 기준으로 부과가 유예되었다가 복직 첫 달 급여에서 정산됩니다."
+        }
+      }
+    ]
+  }
+}
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans">
-  <!-- Header -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <span class="text-2xl">🍼</span>
-        <div>
-          <h1 class="text-lg font-bold text-slate-900 leading-tight">2026 부부 동시·순차 육아휴직 급여 & 건보료 감면 시뮬레이터</h1>
-          <p class="text-xs text-slate-500">사후지급금 폐지 전액 지급 · 6+6 부모특례 최대 450만 · 건강보험료 60% 감면 연동</p>
-        </div>
-      </div>
-      <a href="guides/guide.html" class="text-xs font-semibold bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg hover:bg-indigo-100 transition border border-indigo-200">
+<!-- Header -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<span class="text-2xl">🍼</span>
+<div>
+<h1 class="text-lg font-bold text-slate-900 leading-tight">2026 부부 동시·순차 육아휴직 급여 &amp; 건보료 감면 시뮬레이터</h1>
+<p class="text-xs text-slate-500">사후지급금 폐지 전액 지급 · 6+6 부모특례 최대 450만 · 건강보험료 60% 감면 연동</p>
+</div>
+</div>
+<a class="text-xs font-semibold bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg hover:bg-indigo-100 transition border border-indigo-200" href="guides/guide.html">
         📘 제도 가이드북
       </a>
-    </div>
-  </header>
+</div>
+</header>
 
-  <!-- Top Slim Banner -->
-  <div class="manual-ad-box mx-auto my-2 px-4">
+  <!-- Top Slim Ad Banner (50~60px) -->
+  <div class="manual-ad-box text-center my-3" style="min-height: 60px;">
     <ins class="adsbygoogle"
-         style="display:block; height: 60px; max-height: 60px;"
+         style="display:block"
          data-ad-client="ca-pub-2228289204702106"
          data-ad-slot="3824727725"
          data-ad-format="horizontal"
@@ -42,217 +106,363 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <!-- Main Container: 2-Column Split Layout -->
-  <main class="max-w-7xl mx-auto px-4 py-6 flex-grow">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <!-- Left Column: Input Form (6 cols) -->
-      <section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-6">
-        <div class="border-b border-slate-100 pb-3">
-          <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
-            <span>⚙️</span> 부부 육아휴직 정보 입력
+<!-- Top Slim Banner -->
+
+<!-- Main Container: 2-Column Split Layout -->
+<main class="max-w-7xl mx-auto px-4 py-6 flex-grow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Input Form (6 cols) -->
+<section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-6">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
+<span>⚙️</span> 부부 육아휴직 정보 입력
           </h2>
-          <p class="text-xs text-slate-500 mt-1">2026년 최신 고용보험법 및 국민건강보험법 시행규칙 기준이 적용됩니다.</p>
-        </div>
-
-        <!-- Child Birth Date -->
-        <div>
-          <label class="block text-sm font-semibold text-slate-700 mb-1" for="child-birth">자녀 생년월일 (만 18개월 이내 여부 판정)</label>
-          <input type="date" id="child-birth" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-base focus:ring-2 focus:ring-indigo-500 focus:outline-none" value="2025-06-01">
-          <p class="text-xs text-indigo-600 mt-1" id="special-badge">✓ 6+6 부모육아휴직제 특례 대상 여부가 자동 판별됩니다.</p>
-        </div>
-
-        <!-- Husband Section -->
-        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-sm text-slate-800">👨 남편(부) 휴직 조건</span>
-            <label class="inline-flex items-center text-xs">
-              <input type="checkbox" id="husband-use" checked class="rounded text-indigo-600 mr-1.5 focus:ring-indigo-500">
+<p class="text-xs text-slate-500 mt-1">2026년 최신 고용보험법 및 국민건강보험법 시행규칙 기준이 적용됩니다.</p>
+</div>
+<!-- Child Birth Date -->
+<div>
+<label class="block text-sm font-semibold text-slate-700 mb-1" for="child-birth">자녀 생년월일 (만 18개월 이내 여부 판정)</label>
+<input class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-base focus:ring-2 focus:ring-indigo-500 focus:outline-none" id="child-birth" type="date" value="2025-06-01"/>
+<p class="text-xs text-indigo-600 mt-1" id="special-badge">✓ 6+6 부모육아휴직제 특례 대상 여부가 자동 판별됩니다.</p>
+</div>
+<!-- Husband Section -->
+<div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-bold text-sm text-slate-800">👨 남편(부) 휴직 조건</span>
+<label class="inline-flex items-center text-xs">
+<input checked="" class="rounded text-indigo-600 mr-1.5 focus:ring-indigo-500" id="husband-use" type="checkbox"/>
               휴직 사용
             </label>
-          </div>
-          <div>
-            <label class="block text-xs text-slate-600 mb-1" for="husband-salary">월 세전 통상임금 (원)</label>
-            <input type="text" id="husband-salary" value="3,500,000" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div class="grid grid-cols-2 gap-3">
-            <div>
-              <label class="block text-xs text-slate-600 mb-1" for="husband-start">휴직 시작월</label>
-              <select id="husband-start" class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none">
-                <option value="1">1개월차부터 (동시/1차)</option>
-                <option value="4">4개월차부터 (순차)</option>
-                <option value="7">7개월차부터 (순차)</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs text-slate-600 mb-1" for="husband-months">사용 기간</label>
-              <select id="husband-months" class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none">
-                <option value="1">1개월</option>
-                <option value="3">3개월</option>
-                <option value="6" selected>6개월 (특례 추천)</option>
-                <option value="12">12개월 (최대)</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <!-- Wife Section -->
-        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-sm text-slate-800">👩 아내(모) 휴직 조건</span>
-            <label class="inline-flex items-center text-xs">
-              <input type="checkbox" id="wife-use" checked class="rounded text-indigo-600 mr-1.5 focus:ring-indigo-500">
+</div>
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="husband-salary">월 세전 통상임금 (원)</label>
+<input class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none" id="husband-salary" type="text" value="3,500,000"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="husband-start">휴직 시작월</label>
+<select class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none" id="husband-start">
+<option value="1">1개월차부터 (동시/1차)</option>
+<option value="4">4개월차부터 (순차)</option>
+<option value="7">7개월차부터 (순차)</option>
+</select>
+</div>
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="husband-months">사용 기간</label>
+<select class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none" id="husband-months">
+<option value="1">1개월</option>
+<option value="3">3개월</option>
+<option selected="" value="6">6개월 (특례 추천)</option>
+<option value="12">12개월 (최대)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Wife Section -->
+<div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-bold text-sm text-slate-800">👩 아내(모) 휴직 조건</span>
+<label class="inline-flex items-center text-xs">
+<input checked="" class="rounded text-indigo-600 mr-1.5 focus:ring-indigo-500" id="wife-use" type="checkbox"/>
               휴직 사용
             </label>
-          </div>
-          <div>
-            <label class="block text-xs text-slate-600 mb-1" for="wife-salary">월 세전 통상임금 (원)</label>
-            <input type="text" id="wife-salary" value="2,800,000" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div class="grid grid-cols-2 gap-3">
-            <div>
-              <label class="block text-xs text-slate-600 mb-1" for="wife-start">휴직 시작월</label>
-              <select id="wife-start" class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none">
-                <option value="1" selected>1개월차부터 (동시/1차)</option>
-                <option value="4">4개월차부터 (순차)</option>
-                <option value="7">7개월차부터 (순차)</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs text-slate-600 mb-1" for="wife-months">사용 기간</label>
-              <select id="wife-months" class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none">
-                <option value="3">3개월</option>
-                <option value="6">6개월</option>
-                <option value="12" selected>12개월 (최대)</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="flex items-center gap-3 pt-2">
-          <button id="calc-btn" class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-4 rounded-xl shadow transition duration-150 flex items-center justify-center gap-2 text-base">
-            <span>✨</span> 2026 육아휴직 급여 계산하기
+</div>
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="wife-salary">월 세전 통상임금 (원)</label>
+<input class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none" id="wife-salary" type="text" value="2,800,000"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="wife-start">휴직 시작월</label>
+<select class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none" id="wife-start">
+<option selected="" value="1">1개월차부터 (동시/1차)</option>
+<option value="4">4개월차부터 (순차)</option>
+<option value="7">7개월차부터 (순차)</option>
+</select>
+</div>
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="wife-months">사용 기간</label>
+<select class="w-full px-2.5 py-2 border border-slate-300 rounded-lg text-base focus:outline-none" id="wife-months">
+<option value="3">3개월</option>
+<option value="6">6개월</option>
+<option selected="" value="12">12개월 (최대)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 pt-2">
+<button class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-4 rounded-xl shadow transition duration-150 flex items-center justify-center gap-2 text-base" id="calc-btn">
+<span>✨</span> 2026 육아휴직 급여 계산하기
           </button>
-          <button id="reset-btn" class="px-4 py-3.5 border border-slate-300 hover:bg-slate-100 text-slate-600 font-semibold rounded-xl transition text-base">
+<button class="px-4 py-3.5 border border-slate-300 hover:bg-slate-100 text-slate-600 font-semibold rounded-xl transition text-base" id="reset-btn">
             초기화
           </button>
-        </div>
-      </section>
-
-      <!-- Right Column: Result Card / Receipt (6 cols, Sticky) -->
-      <section class="lg:col-span-6 lg:sticky lg:top-20 space-y-4">
-        <div id="result-box" class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-          <!-- Receipt Header -->
-          <div class="border-b border-dashed border-slate-300 pb-4 mb-4 text-center">
-            <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full mb-1">
+</div>
+</section>
+<!-- Right Column: Result Card / Receipt (6 cols, Sticky) -->
+<section class="lg:col-span-6 lg:sticky lg:top-20 space-y-4">
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200" id="result-box">
+<!-- Receipt Header -->
+<div class="border-b border-dashed border-slate-300 pb-4 mb-4 text-center">
+<span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full mb-1">
               ✓ 2026 법정 정산 영수증
             </span>
-            <h3 class="text-xl font-black text-slate-900">가계 순수 실수령 유입액</h3>
-            <p class="text-3xl font-black text-indigo-600 mt-2" id="net-total-display">41,418,560원</p>
-            <p class="text-xs text-slate-500 mt-1">부부 합산 총 수급액에서 복직 시 건강보험료 정산액을 차감한 실제 현금</p>
-          </div>
-
-          <!-- Receipt Details -->
-          <div class="space-y-3 text-sm">
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
-              <span class="text-slate-500">6+6 부모육아휴직제 특례</span>
-              <span class="font-bold text-indigo-600" id="special-applied-text">적용 대상 (자녀 18개월 이내)</span>
-            </div>
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
-              <span class="text-slate-500">사후지급금 제도</span>
-              <span class="font-bold text-slate-700">전면 폐지 (당월 100% 전액 지급)</span>
-            </div>
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
-              <span class="text-slate-500">👨 남편 수급 총액</span>
-              <span class="font-semibold text-slate-800" id="husband-total-text">18,500,000원 (6개월)</span>
-            </div>
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
-              <span class="text-slate-500">👩 아내 수급 총액</span>
-              <span class="font-semibold text-slate-800" id="wife-total-text">23,100,000원 (12개월)</span>
-            </div>
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
-              <span class="text-slate-500">가계 총 수급 급여</span>
-              <span class="font-bold text-slate-900" id="gross-total-text">41,600,000원</span>
-            </div>
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100 text-rose-600">
-              <span>건보료 복직 정산액 (월 10,080원 × 18)</span>
-              <span class="font-semibold" id="hi-total-text">-181,440원</span>
-            </div>
-            <div class="flex justify-between items-center py-2 bg-indigo-50 px-3 rounded-lg font-bold text-indigo-900">
-              <span>월평균 가계 유입액 (12개월 기준)</span>
-              <span id="monthly-avg-text">월 3,451,546원</span>
-            </div>
-          </div>
-
-          <!-- Copy Button -->
-          <div class="mt-6 pt-4 border-t border-slate-100">
-            <button id="copy-btn" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm shadow">
-              <span>📋</span> 결과 전체 복사하기
+<h3 class="text-xl font-black text-slate-900">가계 순수 실수령 유입액</h3>
+<p class="text-3xl font-black text-indigo-600 mt-2" id="net-total-display">41,418,560원</p>
+<p class="text-xs text-slate-500 mt-1">부부 합산 총 수급액에서 복직 시 건강보험료 정산액을 차감한 실제 현금</p>
+</div>
+<!-- Receipt Details -->
+<div class="space-y-3 text-sm">
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+<span class="text-slate-500">6+6 부모육아휴직제 특례</span>
+<span class="font-bold text-indigo-600" id="special-applied-text">적용 대상 (자녀 18개월 이내)</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+<span class="text-slate-500">사후지급금 제도</span>
+<span class="font-bold text-slate-700">전면 폐지 (당월 100% 전액 지급)</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+<span class="text-slate-500">👨 남편 수급 총액</span>
+<span class="font-semibold text-slate-800" id="husband-total-text">18,500,000원 (6개월)</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+<span class="text-slate-500">👩 아내 수급 총액</span>
+<span class="font-semibold text-slate-800" id="wife-total-text">23,100,000원 (12개월)</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+<span class="text-slate-500">가계 총 수급 급여</span>
+<span class="font-bold text-slate-900" id="gross-total-text">41,600,000원</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100 text-rose-600">
+<span>건보료 복직 정산액 (월 10,080원 × 18)</span>
+<span class="font-semibold" id="hi-total-text">-181,440원</span>
+</div>
+<div class="flex justify-between items-center py-2 bg-indigo-50 px-3 rounded-lg font-bold text-indigo-900">
+<span>월평균 가계 유입액 (12개월 기준)</span>
+<span id="monthly-avg-text">월 3,451,546원</span>
+</div>
+</div>
+<!-- Copy Button -->
+<div class="mt-6 pt-4 border-t border-slate-100">
+<button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm shadow" id="copy-btn">
+<span>📋</span> 결과 전체 복사하기
             </button>
-          </div>
-        </div>
-
-        <!-- Insurance & Finance Context Widget -->
-        <div class="bg-amber-50 rounded-xl p-4 border border-amber-200 text-xs text-amber-900">
-          <p class="font-bold mb-1">💡 2026 복직 후 건강보험료 실무 팁</p>
-          <p>휴직 중에는 건보료가 60% 감면되어 최저보험료(월 10,080원) 기준으로 고지 유예됩니다. 복직 시 일시 청구되므로 해당 금액을 미리 가계 자금으로 예치해 두는 것이 안전합니다.</p>
-        </div>
-      </section>
-
-    </div>
-
-    <!-- Editorial Guide & FAQ Accordion Section -->
-    <section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
-      <h2 class="text-xl font-bold text-slate-900 mb-4">2026 육아휴직 급여 및 건보료 산정 핵심 규정</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 mb-8">
-        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-          <h3 class="font-bold text-slate-800 text-base mb-2">1. 2026년 개편된 계단식 상한액 체계</h3>
-          <p class="leading-relaxed">고용보험법 시행령 제95조에 따라 육아휴직 개시 후 첫 3개월은 월 최대 250만 원(100%), 4~6개월은 월 최대 200만 원(100%), 7개월 이후는 월 최대 160만 원(80%)의 상한액이 적용됩니다. 과거의 일률적 150만 원 상한 대비 초기 소득 보전이 크게 강화되었습니다.</p>
-        </div>
-        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-          <h3 class="font-bold text-slate-800 text-base mb-2">2. 6+6 부모육아휴직제 특례</h3>
-          <p class="leading-relaxed">생후 18개월 이내 자녀에 대해 부모가 순차 또는 동시에 휴직하는 경우, 첫 6개월 동안 통상임금 100% 범위 내에서 매월 상향된 상한액(1개월 250만 원부터 6개월 450만 원까지)이 부모 각자에게 적용됩니다.</p>
-        </div>
-      </div>
-
-      <!-- FAQ Section -->
-      <h3 class="text-lg font-bold text-slate-800 mb-3">자주 묻는 질문 (FAQ)</h3>
-      <div class="space-y-3">
-        <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
-          <summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
-            <span>Q1. 25% 사후지급금은 정말로 없어졌나요?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+</div>
+</div>
+<!-- Insurance & Finance Context Widget -->
+<div class="bg-amber-50 rounded-xl p-4 border border-amber-200 text-xs text-amber-900">
+<p class="font-bold mb-1">💡 2026 복직 후 건강보험료 실무 팁</p>
+<p>휴직 중에는 건보료가 60% 감면되어 최저보험료(월 10,080원) 기준으로 고지 유예됩니다. 복직 시 일시 청구되므로 해당 금액을 미리 가계 자금으로 예치해 두는 것이 안전합니다.</p>
+</div>
+</section>
+</div>
+<!-- Editorial Guide & FAQ Accordion Section -->
+<section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
+<h2 class="text-xl font-bold text-slate-900 mb-4">2026 육아휴직 급여 및 건보료 산정 핵심 규정</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 mb-8">
+<div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+<h3 class="font-bold text-slate-800 text-base mb-2">1. 2026년 개편된 계단식 상한액 체계</h3>
+<p class="leading-relaxed">고용보험법 시행령 제95조에 따라 육아휴직 개시 후 첫 3개월은 월 최대 250만 원(100%), 4~6개월은 월 최대 200만 원(100%), 7개월 이후는 월 최대 160만 원(80%)의 상한액이 적용됩니다. 과거의 일률적 150만 원 상한 대비 초기 소득 보전이 크게 강화되었습니다.</p>
+</div>
+<div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+<h3 class="font-bold text-slate-800 text-base mb-2">2. 6+6 부모육아휴직제 특례</h3>
+<p class="leading-relaxed">생후 18개월 이내 자녀에 대해 부모가 순차 또는 동시에 휴직하는 경우, 첫 6개월 동안 통상임금 100% 범위 내에서 매월 상향된 상한액(1개월 250만 원부터 6개월 450만 원까지)이 부모 각자에게 적용됩니다.</p>
+</div>
+</div>
+<!-- FAQ Section -->
+<h3 class="text-lg font-bold text-slate-800 mb-3">자주 묻는 질문 (FAQ)</h3>
+<div class="space-y-3">
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
+<summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
+<span>Q1. 25% 사후지급금은 정말로 없어졌나요?</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<p class="text-sm text-slate-600 mt-2 leading-relaxed">
             네, 고용보험법 개정으로 육아휴직 기간 중 75%만 주고 복직 6개월 후 25%를 정산하던 사후지급금 제도는 완전 폐지되었습니다. 휴직 기간 중 산출된 급여 100%가 당월에 전액 지급됩니다.
           </p>
-        </details>
-        <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
-          <summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
-            <span>Q2. 휴직 중 국민연금과 고용·산재보험은 어떻게 되나요?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+</details>
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
+<summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
+<span>Q2. 휴직 중 국민연금과 고용·산재보험은 어떻게 되나요?</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<p class="text-sm text-slate-600 mt-2 leading-relaxed">
             국민연금은 '납부예외'를 신청하여 보험료 납부를 중단할 수 있으며, 고용보험과 산재보험은 근로 제공이 없으므로 부과되지 않습니다. 유일한 실질 공제액은 건강보험료입니다.
           </p>
-        </details>
-        <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
-          <summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
-            <span>Q3. 건강보험료 60% 감면액은 언제 납부하나요?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+</details>
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
+<summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
+<span>Q3. 건강보험료 60% 감면액은 언제 납부하나요?</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<p class="text-sm text-slate-600 mt-2 leading-relaxed">
             대부분의 사업장에서 휴직 기간 중 고지 유예를 신청하므로 복직 첫 달 월급 정산 시 휴직 개월 수에 해당하는 하한액(월 약 10,080원)이 일괄 공제됩니다.
           </p>
-        </details>
-      </div>
-    </section>
-  </main>
+</details>
+</div>
+</section>
+</main>
+<!-- Bottom Large Banner -->
 
-  <!-- Bottom Large Banner -->
-  <div class="manual-ad-box mx-auto my-6 px-4">
+<!-- Toast Notification -->
+<div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white text-sm px-5 py-2.5 rounded-full shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none z-50" id="toast">
+    결과가 클립보드에 복사되었습니다.
+  </div>
+<!-- Footer -->
+<!-- E-E-A-T In-Depth Guidebook & FAQ & Hub-and-Spoke Links -->
+<section class="max-w-4xl mx-auto px-4 py-8 space-y-8">
+<!-- Hub & Spoke Magazine Guide Banner -->
+<div class="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/40 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="space-y-2 text-center sm:text-left">
+<span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">2,000자+ 전문 매거진 심층 분석</span>
+<h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+          2026 육아휴직 급여 계산기 &amp; 건보료 감면 모의계산 완벽 해설 가이드북
+        </h2>
+<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
+          법령 산식, 2026년 최신 고시, 상황별 비교 분석표 및 실무 절세·행동 요령이 수록된 전문 가이드북을 지금 무료로 확인하세요.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3.5 rounded-xl transition shadow hover:shadow-md text-sm whitespace-nowrap" href="./guides/guide.html">
+<span>📖</span> <span>심층 가이드북 읽기 →</span>
+</a>
+</div>
+<!-- FAQ Accordion -->
+<div class="space-y-4">
+<div class="border-b border-slate-200 dark:border-slate-800 pb-3">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span>💡</span> 자주 묻는 질문 (E-E-A-T FAQ 3선)
+        </h2>
+</div>
+<div class="space-y-4">
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 2026년 육아휴직 급여 상한액이 어떻게 바뀌었나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            2026년 1월부터 고용보험법 시행령 제95조 개정으로 1~3개월은 통상임금 100% 범위 내 월 최대 250만 원, 4~6개월은 월 최대 200만 원, 7~12개월은 월 최대 160만 원으로 상향되었습니다. 1년 최대 수령액은 2,310만 원입니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 사후지급금(25%)은 언제 받을 수 있나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            2026년부터 사후지급금 제도가 전격 폐지되었습니다. 복직 후 6개월을 기다릴 필요 없이 매월 승인된 급여 100%가 당월에 본인 계좌로 전액 즉시 지급됩니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 육아휴직 중 건강보험료는 얼마나 감면되나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            국민건강보험법 제75조에 따라 휴직 기간 동안 60% 법정 감면이 적용되며, 최저 하한액 기준으로 부과가 유예되었다가 복직 첫 달 급여에서 정산됩니다.
+          </p>
+</div>
+</div>
+</div>
+<!-- Official Legal Disclaimer -->
+<div class="bg-slate-100 dark:bg-slate-800/60 rounded-xl p-5 border border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 space-y-1.5 leading-relaxed">
+<div class="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+<span>⚖️</span> <span>법적 고지 및 면책 조항 (Legal Disclaimer)</span>
+</div>
+<p>
+        본 웹 애플리케이션의 모든 연산 결과와 시뮬레이션 수치는 2026년 최신 관계 법령 및 표준 산식을 기초로 산출된 참고용 추정치입니다. 실제 개별 세무 정산, 대출 승인, 정부 지원금 수령 등은 개인의 구체적 조건에 따라 차이가 발생할 수 있습니다. 본 사이트는 도구의 계산 결과를 근거로 한 금융·법률적 결정에 대해 법적 책임을 지지 않습니다.
+      </p>
+</div>
+</section>
+
+  <!-- Additional E-E-A-T In-depth Educational Guide & Action Checklist -->
+  <section class="max-w-4xl mx-auto px-4 py-6">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+      <h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+        <span>📋</span> 2026년 실무 핵심 활용 전략 및 실천 가이드
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        본 도구는 최신 2026년 제도 기준과 수학적 공식에 기반하여 설계되었습니다. 정확한 결과 도출을 위해 아래 3대 실천 수칙을 준수하시기 바랍니다:
+      </p>
+      <ul class="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-disc list-inside leading-relaxed pl-2">
+        <li><strong>정확한 기본 데이터 입력:</strong> 공식 증빙 서류(근로계약서, 소득금액증명원, 영수증 등)에 기재된 정확한 세전/세후 수치를 입력하세요.</li>
+        <li><strong>결과 검토 및 시뮬레이션:</strong> 단일 조건에 안주하지 않고 다양한 변수(기간 연장, 금리 변동, 할인율 적용 등)를 대입하여 최적의 플랜을 수립하세요.</li>
+        <li><strong>공식 가이드북 대조:</strong> 상세한 법령 배경과 심층 비교표가 수록된 <a href="./guides/guide.html" class="text-indigo-600 dark:text-indigo-400 font-bold underline hover:text-indigo-800">2026 전문 매거진 가이드북</a>을 통해 실무적인 유의사항을 최종 점검하세요.</li>
+      </ul>
+      <div class="pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
+        ※ 본 유틸리티의 모든 연산은 외부 서버로 전송되지 않는 100% 클라이언트 로컬 보안 연산입니다. 안심하고 자유롭게 활용하세요.
+      </div>
+    </div>
+  </section>
+
+<!-- Bottom Large Ad Banner -->
+
+<!-- Footer -->
+<!-- E-E-A-T In-Depth Guidebook & FAQ & Hub-and-Spoke Links -->
+<section class="max-w-4xl mx-auto px-4 py-8 space-y-8">
+<!-- Hub & Spoke Magazine Guide Banner -->
+<div class="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/40 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="space-y-2 text-center sm:text-left">
+<span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">2,000자+ 전문 매거진 심층 분석</span>
+<h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+          2026 육아휴직 급여 계산기 &amp; 건보료 감면 모의계산 완벽 해설 가이드북
+        </h2>
+<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
+          법령 산식, 2026년 최신 고시, 상황별 비교 분석표 및 실무 절세·행동 요령이 수록된 전문 가이드북을 지금 무료로 확인하세요.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3.5 rounded-xl transition shadow hover:shadow-md text-sm whitespace-nowrap" href="./guides/guide.html">
+<span>📖</span> <span>심층 가이드북 읽기 →</span>
+</a>
+</div>
+<!-- FAQ Accordion -->
+<div class="space-y-4">
+<div class="border-b border-slate-200 dark:border-slate-800 pb-3">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span>💡</span> 자주 묻는 질문 (E-E-A-T FAQ 3선)
+        </h2>
+</div>
+<div class="space-y-4">
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 2026년 육아휴직 급여 상한액이 어떻게 바뀌었나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            2026년 1월부터 고용보험법 시행령 제95조 개정으로 1~3개월은 통상임금 100% 범위 내 월 최대 250만 원, 4~6개월은 월 최대 200만 원, 7~12개월은 월 최대 160만 원으로 상향되었습니다. 1년 최대 수령액은 2,310만 원입니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 사후지급금(25%)은 언제 받을 수 있나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            2026년부터 사후지급금 제도가 전격 폐지되었습니다. 복직 후 6개월을 기다릴 필요 없이 매월 승인된 급여 100%가 당월에 본인 계좌로 전액 즉시 지급됩니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 육아휴직 중 건강보험료는 얼마나 감면되나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            국민건강보험법 제75조에 따라 휴직 기간 동안 60% 법정 감면이 적용되며, 최저 하한액 기준으로 부과가 유예되었다가 복직 첫 달 급여에서 정산됩니다.
+          </p>
+</div>
+</div>
+</div>
+<!-- Official Legal Disclaimer -->
+<div class="bg-slate-100 dark:bg-slate-800/60 rounded-xl p-5 border border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 space-y-1.5 leading-relaxed">
+<div class="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+<span>⚖️</span> <span>법적 고지 및 면책 조항 (Legal Disclaimer)</span>
+</div>
+<p>
+        본 웹 애플리케이션의 모든 연산 결과와 시뮬레이션 수치는 2026년 최신 관계 법령 및 표준 산식을 기초로 산출된 참고용 추정치입니다. 실제 개별 세무 정산, 대출 승인, 정부 지원금 수령 등은 개인의 구체적 조건에 따라 차이가 발생할 수 있습니다. 본 사이트는 도구의 계산 결과를 근거로 한 금융·법률적 결정에 대해 법적 책임을 지지 않습니다.
+      </p>
+</div>
+</section>
+<!-- Bottom Large Ad Banner -->
+
+<!-- Footer -->
+
+
+  <!-- Bottom Large Ad Banner -->
+  <div class="manual-ad-box text-center my-6">
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-2228289204702106"
@@ -262,178 +472,19 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <!-- Toast Notification -->
-  <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white text-sm px-5 py-2.5 rounded-full shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none z-50">
-    결과가 클립보드에 복사되었습니다.
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-400">
-    <div class="max-w-7xl mx-auto px-4 space-y-1">
-      <p>© 2026 2026 부부 육아휴직 급여 & 건보료 시뮬레이터. All rights reserved.</p>
-      <p>본 계산기는 2026년 고용보험법 및 국민건강보험법 시행규칙에 근거하여 산출된 모의 결과이며, 실제 지급액은 관할 고용센터 심사에 따라 달라질 수 있습니다.</p>
-    </div>
-  </footer>
-
-  <!-- Script Logic -->
-  <script>
-    // 2026 Constants
-    const SPECIAL_CAPS = [2500000, 2500000, 3000000, 3500000, 4000000, 4500000];
-    const HEALTH_INSURANCE_MONTHLY = 10080; // 직장 하한액 본인부담금 60% 감면 기준
-
-    function cleanNum(val) {
-      if (!val) return 0;
-      return parseInt(String(val).replace(/,/g, ''), 10) || 0;
-    }
-
-    function formatNum(num) {
-      return Math.round(num).toLocaleString('ko-KR');
-    }
-
-    function formatInputComma(e) {
-      const cursor = e.target.selectionStart;
-      const raw = e.target.value.replace(/,/g, '');
-      if (!raw || isNaN(raw)) return;
-      e.target.value = parseInt(raw, 10).toLocaleString('ko-KR');
-    }
-
-    document.getElementById('husband-salary').addEventListener('input', formatInputComma);
-    document.getElementById('wife-salary').addEventListener('input', formatInputComma);
-
-    // Calculate individual leave pay
-    function calcPersonPay(salary, months, isSpecial) {
-      let total = 0;
-      for (let m = 1; m <= months; m++) {
-        let monthly = 0;
-        if (isSpecial && m <= 6) {
-          // 6+6 special rule: 100% of salary up to monthly cap
-          monthly = Math.min(salary, SPECIAL_CAPS[m - 1]);
-        } else {
-          // General 2026 rule
-          if (m <= 3) {
-            monthly = Math.max(700000, Math.min(salary * 1.0, 2500000));
-          } else if (m <= 6) {
-            monthly = Math.max(700000, Math.min(salary * 1.0, 2000000));
-          } else {
-            monthly = Math.max(700000, Math.min(salary * 0.8, 1600000));
-          }
-        }
-        total += monthly;
-      }
-      return total;
-    }
-
-    function runCalculation() {
-      const birthVal = document.getElementById('child-birth').value;
-      let isSpecialEligible = true;
-      if (birthVal) {
-        const birthDate = new Date(birthVal);
-        const now = new Date();
-        const diffMonths = (now.getFullYear() - birthDate.getFullYear()) * 12 + (now.getMonth() - birthDate.getMonth());
-        isSpecialEligible = diffMonths <= 18;
-      }
-
-      const husbandUse = document.getElementById('husband-use').checked;
-      const wifeUse = document.getElementById('wife-use').checked;
-
-      const husbandSal = husbandUse ? cleanNum(document.getElementById('husband-salary').value) : 0;
-      const wifeSal = wifeUse ? cleanNum(document.getElementById('wife-salary').value) : 0;
-
-      const husbandMonths = husbandUse ? parseInt(document.getElementById('husband-months').value, 10) : 0;
-      const wifeMonths = wifeUse ? parseInt(document.getElementById('wife-months').value, 10) : 0;
-
-      const husbandPay = calcPersonPay(husbandSal, husbandMonths, isSpecialEligible && wifeUse);
-      const wifePay = calcPersonPay(wifeSal, wifeMonths, isSpecialEligible && husbandUse);
-
-      const grossTotal = husbandPay + wifePay;
-      const totalMonths = husbandMonths + wifeMonths;
-      const hiTotal = totalMonths * HEALTH_INSURANCE_MONTHLY;
-      const netTotal = grossTotal - hiTotal;
-      const monthlyAvg = Math.round(netTotal / 12);
-
-      // DOM Update
-      document.getElementById('special-applied-text').textContent = isSpecialEligible 
-        ? '적용 대상 (자녀 18개월 이내 특례 적용)' 
-        : '일반 기준 적용 (생후 18개월 초과)';
-      
-      document.getElementById('husband-total-text').textContent = husbandUse 
-        ? `${formatNum(husbandPay)}원 (${husbandMonths}개월)` 
-        : '미사용 (0원)';
-
-      document.getElementById('wife-total-text').textContent = wifeUse 
-        ? `${formatNum(wifePay)}원 (${wifeMonths}개월)` 
-        : '미사용 (0원)';
-
-      document.getElementById('gross-total-text').textContent = `${formatNum(grossTotal)}원`;
-      document.getElementById('hi-total-text').textContent = `-${formatNum(hiTotal)}원`;
-      document.getElementById('net-total-display').textContent = `${formatNum(netTotal)}원`;
-      document.getElementById('monthly-avg-text').textContent = `월 ${formatNum(monthlyAvg)}원`;
-
-      // Save local
-      try {
-        localStorage.setItem('parental_calc_last', JSON.stringify({
-          grossTotal, netTotal, totalMonths
-        }));
-      } catch (e) {}
-    }
-
-    document.getElementById('calc-btn').addEventListener('click', runCalculation);
-
-    document.getElementById('reset-btn').addEventListener('click', function() {
-      document.getElementById('husband-salary').value = '3,500,000';
-      document.getElementById('wife-salary').value = '2,800,000';
-      document.getElementById('husband-months').value = '6';
-      document.getElementById('wife-months').value = '12';
-      document.getElementById('husband-use').checked = true;
-      document.getElementById('wife-use').checked = true;
-      runCalculation();
-    });
-
-    // Copy & Toast
-    function showToast(msg) {
-      const toast = document.getElementById('toast');
-      toast.textContent = msg;
-      toast.style.opacity = '1';
-      setTimeout(() => {
-        toast.style.opacity = '0';
-      }, 2200);
-    }
-
-    document.getElementById('copy-btn').addEventListener('click', function() {
-      const net = document.getElementById('net-total-display').textContent;
-      const gross = document.getElementById('gross-total-text').textContent;
-      const hi = document.getElementById('hi-total-text').textContent;
-      const url = window.location.href;
-
-      const summary = `[2026 부부 육아휴직 급여 & 건보료 산출 결과]\n- 가계 순수 실수령 유입액: ${net}\n- 부부 합산 총 급여: ${gross}\n- 복직 시 건보료 일괄 정산액: ${hi}\n👉 계산기 바로가기: ${url}`;
-
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(summary).then(() => {
-          showToast('결과가 클립보드에 복사되었습니다.');
-        }).catch(() => fallbackCopy(summary));
-      } else {
-        fallbackCopy(summary);
-      }
-    });
-
-    function fallbackCopy(text) {
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy');
-        showToast('결과가 클립보드에 복사되었습니다.');
-      } catch (err) {
-        alert('복사에 실패했습니다.');
-      }
-      document.body.removeChild(ta);
-    }
-
-    // Auto-run on load
-    window.addEventListener('DOMContentLoaded', runCalculation);
-  </script>
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500 dark:text-slate-400 mt-12">
+<div class="max-w-4xl mx-auto px-4 space-y-3">
+<div class="flex justify-center gap-4 text-xs font-medium">
+<a class="hover:underline" href="./index.html">메인 도구</a>
+<span>•</span>
+<a class="hover:underline" href="./guides/guide.html">전문 가이드북</a>
+<span>•</span>
+<a class="hover:underline" href="./privacy.html">개인정보처리방침</a>
+<span>•</span>
+<a class="hover:underline" href="./terms.html">이용약관</a>
+</div>
+<p>© 2026 enjoy-onepage.com. All rights reserved.</p>
+</div>
+</footer>
 </body>
 </html>
