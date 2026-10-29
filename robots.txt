@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://parental-leave-benefit-calc.enjoy-onepage.com/sitemap.xml
